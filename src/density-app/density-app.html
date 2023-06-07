@@ -1,0 +1,43 @@
+<div class="density-selector">
+  <mat-form-field>
+    <mat-label>Select a density</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="0">0</mat-option>
+      <mat-option value="1">1</mat-option>
+      <mat-option value="2">2</mat-option>
+      <mat-option value="3">3</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<h1 style="margin-top: 100px">Angular Material Density</h1>
+<h4>Angular Material 16.0.3</h4>
+
+<br />
+
+<code>@include mat.&lt;component&gt;-density({{selected}});</code>
+
+<br />
+<br />
+
+<div [class]="'density-settings-' + selected">
+  <h2>Buttons</h2>
+  <code>@include mat.button-density({{selected}});</code>
+  <br />
+  <code>@include mat.icon-button-density({{selected}});</code>
+  <button-overview-example></button-overview-example>
+
+  <h2>Checkboxes</h2>
+  <code>@include mat.checkbox-density({{selected}});</code>
+  <checkbox-overview-example></checkbox-overview-example>
+
+  <h2>Input Form Fields</h2>
+  <code>@include mat.form-field-density({{selected}});</code>
+  <input-overview-example></input-overview-example>
+
+  <h2>Radio button</h2>
+  <code>@include mat.radio-density({{selected}});</code>
+  <br />
+  <br />
+  <radio-ng-model-example></radio-ng-model-example>
+</div>
