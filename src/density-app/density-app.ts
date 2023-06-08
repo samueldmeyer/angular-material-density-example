@@ -24,5 +24,5 @@ import { RadioNgModelExample } from 'src/radio-example/radio-ng-model-example';
   ],
 })
 export class DensityApp {
-  selected = '0';
+  selected = '';
 }
