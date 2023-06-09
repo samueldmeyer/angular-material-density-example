@@ -22,10 +22,10 @@
   @include mat.form-field-density(-3);
 }
 
-.density-settings-4 {
+:host ::ng-deep .density-settings-4 {
   @include mat.form-field-density(-4);
 }
 
-.density-settings-5 {
+:host ::ng-deep .density-settings-5 {
   @include mat.form-field-density(-5);
 }

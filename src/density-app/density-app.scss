@@ -1,13 +1,7 @@
 @use '@angular/material' as mat;
 
-.density-selector {
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  background-color: #fafafa;
-  z-index: 5;
-  padding-top: 22px;
-  border-bottom: 1px solid black;
+div.last-div {
+  height: 24px;
 }
 
 h2 {

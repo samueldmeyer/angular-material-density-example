@@ -1,42 +1,27 @@
 <h1>Angular Material Density Tester</h1>
 <h4>Angular Material 16.0.3</h4>
 
-<div class="density-selector">
-  <mat-form-field appearance="outline" style="width: 300px">
-    <mat-label>Select a global density</mat-label>
-    <mat-select [(value)]="selected">
-      <mat-option></mat-option>
-      <mat-option value="0">0</mat-option>
-      <mat-option value="-1">-1</mat-option>
-      <mat-option value="-2">-2</mat-option>
-      <mat-option value="-3">-3</mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
+<p>You can set the density for each component.</p>
 
-<br />
+<h2>Buttons</h2>
+<button-overview-example></button-overview-example>
 
-<code>@include mat.&lt;component&gt;-density({{selected || 0}});</code>
+<h2>Icon Buttons</h2>
+<icon-button-overview-example></icon-button-overview-example>
 
-<br />
-<br />
+<h2>Checkboxes</h2>
+<checkbox-overview-example></checkbox-overview-example>
 
-<div [class]="'density-settings' + selected">
-  <h2>Buttons</h2>
-  <button-overview-example></button-overview-example>
+<h2>Input Form Fields</h2>
+<input-overview-example></input-overview-example>
 
-  <h2>Icon Buttons</h2>
-  <icon-button-overview-example></icon-button-overview-example>
+<h2>Radio button</h2>
+<radio-ng-model-example></radio-ng-model-example>
 
-  <h2>Checkboxes</h2>
-  <checkbox-overview-example></checkbox-overview-example>
-
-  <h2>Input Form Fields</h2>
-  <input-overview-example></input-overview-example>
-
-  <h2>Radio button</h2>
-  <code>@include mat.radio-density({{selected || 0}});</code>
-  <br />
-  <br />
-  <radio-ng-model-example></radio-ng-model-example>
-</div>
+<h2>Other components</h2>
+<p>
+  Other components such as tables, trees, and lists can also have density set,
+  but may require you to set the density for buttons or checkboxes inside of
+  them.
+</p>
+<div class="last-div"></div>

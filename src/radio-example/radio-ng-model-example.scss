@@ -1,6 +1,28 @@
+@use '@angular/material' as mat;
+
 .example-radio-group {
   display: flex;
   flex-direction: column;
   margin: 15px 0;
   align-items: flex-start;
+}
+
+.density-settings-1 {
+  @include mat.radio-density(-1);
+}
+
+.density-settings-2 {
+  @include mat.radio-density(-2);
+}
+
+.density-settings-3 {
+  @include mat.radio-density(-3);
+}
+
+:host ::ng-deep .density-settings-4 {
+  @include mat.radio-density(-4);
+}
+
+:host ::ng-deep .density-settings-5 {
+  @include mat.radio-density(-5);
 }

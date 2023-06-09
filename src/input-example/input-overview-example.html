@@ -9,6 +9,10 @@
 </div>
 
 <code>@include mat.form-field-density({{selected || 0}});</code>
+<p *ngIf="+selected < -3">
+  Densities of <code>-4</code> and <code>-5</code> require
+  <code>::ng-deep</code>
+</p>
 <br />
 <br />
 <div [class]="'density-settings' + selected">

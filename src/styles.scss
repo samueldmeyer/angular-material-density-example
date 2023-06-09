@@ -4,10 +4,11 @@ body {
   padding: 30px;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
-body {
-  height: auto;
-}
+// body {
+//   height: auto;
+// }

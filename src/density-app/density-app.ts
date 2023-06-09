@@ -8,7 +8,7 @@ import { InputOverviewExample } from 'src/input-example/input-overview-example';
 import { RadioNgModelExample } from 'src/radio-example/radio-ng-model-example';
 
 /**
- * @title Basic buttons
+ * @title Density of components
  */
 @Component({
   selector: 'density-app',
