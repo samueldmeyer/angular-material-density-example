@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 /**
  * @title Basic buttons
@@ -11,10 +15,16 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: 'button-overview-example.html',
   styleUrls: ['button-overview-example.scss'],
   standalone: true,
-  imports: [MatButtonModule, MatDividerModule, MatIconModule],
+  imports: [
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    CommonModule,
+  ],
 })
-export class ButtonOverviewExample {}
-
-/**  Copyright 2023 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license */
+export class ButtonOverviewExample {
+  selected = '';
+  options = [...Array(4).keys()].map((x) => -x);
+}

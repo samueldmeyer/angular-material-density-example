@@ -3,6 +3,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { ButtonOverviewExample } from 'src/button-example/button-overview-example';
 import { CheckboxOverviewExample } from 'src/checkbox-example/checkbox-overview-example';
+import { IconButtonOverviewExample } from 'src/icon-button-example/icon-button-overview-example';
 import { InputOverviewExample } from 'src/input-example/input-overview-example';
 import { RadioNgModelExample } from 'src/radio-example/radio-ng-model-example';
 
@@ -16,6 +17,7 @@ import { RadioNgModelExample } from 'src/radio-example/radio-ng-model-example';
   standalone: true,
   imports: [
     ButtonOverviewExample,
+    IconButtonOverviewExample,
     CheckboxOverviewExample,
     InputOverviewExample,
     RadioNgModelExample,

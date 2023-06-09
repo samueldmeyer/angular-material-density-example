@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 export interface Task {
   name: string;
@@ -19,9 +21,19 @@ export interface Task {
   templateUrl: 'checkbox-overview-example.html',
   styleUrls: ['checkbox-overview-example.scss'],
   standalone: true,
-  imports: [MatCheckboxModule, NgFor, FormsModule],
+  imports: [
+    MatCheckboxModule,
+    NgFor,
+    FormsModule,
+    CommonModule,
+    MatFormFieldModule,
+    MatSelectModule,
+  ],
 })
 export class CheckboxOverviewExample {
+  selected = '';
+  options = [...Array(4).keys()].map((x) => -x);
+
   task: Task = {
     name: 'Indeterminate',
     completed: false,

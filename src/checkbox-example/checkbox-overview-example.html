@@ -1,35 +1,47 @@
-<section class="example-section">
-  <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-  <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
-</section>
+<div class="density-selector">
+  <mat-form-field appearance="outline">
+    <mat-label>Select a density</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option></mat-option>
+      <mat-option *ngFor="let val of options" [value]="val">{{val}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
 
-<section class="example-section">
-  <span class="example-list-section">
-    <mat-checkbox
-      class="example-margin"
-      [checked]="allComplete"
-      [color]="task.color"
-      [indeterminate]="someComplete()"
-      (change)="setAll($event.checked)"
+<code>@include mat.checkbox-density({{selected || 0}});</code>
+
+<div [class]="'density-settings' + selected">
+  <section class="example-section">
+    <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+    <mat-checkbox class="example-margin" [disabled]="true"
+      >Disabled</mat-checkbox
     >
-      {{task.name}}
-    </mat-checkbox>
-  </span>
-  <span class="example-list-section">
-    <ul>
-      <li *ngFor="let subtask of task.subtasks">
-        <mat-checkbox
-          [(ngModel)]="subtask.completed"
-          [color]="subtask.color"
-          (ngModelChange)="updateAllComplete()"
-        >
-          {{subtask.name}}
-        </mat-checkbox>
-      </li>
-    </ul>
-  </span>
-</section>
+  </section>
 
-<!-- Copyright 2023 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license -->
+  <section class="example-section">
+    <span class="example-list-section">
+      <mat-checkbox
+        class="example-margin"
+        [checked]="allComplete"
+        [color]="task.color"
+        [indeterminate]="someComplete()"
+        (change)="setAll($event.checked)"
+      >
+        {{task.name}}
+      </mat-checkbox>
+    </span>
+    <span class="example-list-section">
+      <ul>
+        <li *ngFor="let subtask of task.subtasks">
+          <mat-checkbox
+            [(ngModel)]="subtask.completed"
+            [color]="subtask.color"
+            (ngModelChange)="updateAllComplete()"
+          >
+            {{subtask.name}}
+          </mat-checkbox>
+        </li>
+      </ul>
+    </span>
+  </section>
+</div>

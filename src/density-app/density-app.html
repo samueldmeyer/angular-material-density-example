@@ -2,8 +2,8 @@
 <h4>Angular Material 16.0.3</h4>
 
 <div class="density-selector">
-  <mat-form-field appearance="outline">
-    <mat-label>Select a density</mat-label>
+  <mat-form-field appearance="outline" style="width: 300px">
+    <mat-label>Select a global density</mat-label>
     <mat-select [(value)]="selected">
       <mat-option></mat-option>
       <mat-option value="0">0</mat-option>
@@ -23,17 +23,15 @@
 
 <div [class]="'density-settings' + selected">
   <h2>Buttons</h2>
-  <code>@include mat.button-density({{selected || 0}});</code>
-  <br />
-  <code>@include mat.icon-button-density({{selected || 0}});</code>
   <button-overview-example></button-overview-example>
 
+  <h2>Icon Buttons</h2>
+  <icon-button-overview-example></icon-button-overview-example>
+
   <h2>Checkboxes</h2>
-  <code>@include mat.checkbox-density({{selected || 0}});</code>
   <checkbox-overview-example></checkbox-overview-example>
 
   <h2>Input Form Fields</h2>
-  <code>@include mat.form-field-density({{selected || 0}});</code>
   <input-overview-example></input-overview-example>
 
   <h2>Radio button</h2>

@@ -1,3 +1,5 @@
+@use '@angular/material' as mat;
+
 .example-form {
   min-width: 150px;
   max-width: 500px;
@@ -6,4 +8,24 @@
 
 .example-full-width {
   width: 100%;
+}
+
+.density-settings-1 {
+  @include mat.form-field-density(-1);
+}
+
+.density-settings-2 {
+  @include mat.form-field-density(-2);
+}
+
+.density-settings-3 {
+  @include mat.form-field-density(-3);
+}
+
+.density-settings-4 {
+  @include mat.form-field-density(-4);
+}
+
+.density-settings-5 {
+  @include mat.form-field-density(-5);
 }

@@ -1,7 +1,5 @@
 @use '@angular/material' as mat;
 
-// @include mat.button-density(-3);
-
 section {
   display: table;
 }
@@ -32,4 +30,16 @@ section {
   display: flex;
   justify-content: center;
   width: 120px;
+}
+
+.density-settings-1 {
+  @include mat.button-density(-1);
+}
+
+.density-settings-2 {
+  @include mat.button-density(-2);
+}
+
+.density-settings-3 {
+  @include mat.button-density(-3);
 }
