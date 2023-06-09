@@ -6,6 +6,7 @@ import { CheckboxOverviewExample } from 'src/checkbox-example/checkbox-overview-
 import { IconButtonOverviewExample } from 'src/icon-button-example/icon-button-overview-example';
 import { InputOverviewExample } from 'src/input-example/input-overview-example';
 import { RadioNgModelExample } from 'src/radio-example/radio-ng-model-example';
+import { TableBasicExample } from 'src/table-example/table-basic-example';
 
 /**
  * @title Density of components
@@ -21,6 +22,7 @@ import { RadioNgModelExample } from 'src/radio-example/radio-ng-model-example';
     CheckboxOverviewExample,
     InputOverviewExample,
     RadioNgModelExample,
+    TableBasicExample,
     MatFormFieldModule,
     MatSelectModule,
   ],
