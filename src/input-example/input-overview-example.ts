@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +12,7 @@ import { MatSelectModule } from '@angular/material/select';
   selector: 'input-overview-example',
   styleUrls: ['input-overview-example.scss'],
   templateUrl: 'input-overview-example.html',
+  encapsulation: ViewEncapsulation.None,
   standalone: true,
   imports: [
     FormsModule,

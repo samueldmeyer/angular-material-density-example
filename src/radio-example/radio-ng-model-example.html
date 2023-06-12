@@ -8,7 +8,13 @@
   </mat-form-field>
 </div>
 
-<code>@include mat.radio-density({{selected || 0}});</code>
+<code>
+  // Use with ViewEncapsulation.None
+  <br />
+  // The default emulated ViewEncapsulation does not work for radio buttons
+  <br />
+  @include mat.radio-density({{selected || 0}});
+</code>
 <br />
 <br />
 
