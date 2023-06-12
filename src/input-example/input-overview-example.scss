@@ -10,15 +10,15 @@
   width: 100%;
 }
 
-.density-settings-1 {
+:host ::ng-deep .density-settings-1 {
   @include mat.form-field-density(-1);
 }
 
-.density-settings-2 {
+:host ::ng-deep .density-settings-2 {
   @include mat.form-field-density(-2);
 }
 
-.density-settings-3 {
+:host ::ng-deep .density-settings-3 {
   @include mat.form-field-density(-3);
 }
 

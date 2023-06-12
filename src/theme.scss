@@ -35,50 +35,16 @@ $theme: mat.define-light-theme(
 // that you are using.
 @include mat.all-component-themes($theme);
 
-$theme-1: mat.define-light-theme(
-  (
-    color: (
-      primary: $theme-primary,
-      accent: $theme-accent,
-      warn: $theme-warn,
-    ),
-    typography: mat.define-typography-config(),
-    density: -1,
-  )
-);
+// Example global setting below
 
-.density-settings-1 {
-  @include mat.all-component-themes($theme-1);
-}
-
-$theme-2: mat.define-light-theme(
-  (
-    color: (
-      primary: $theme-primary,
-      accent: $theme-accent,
-      warn: $theme-warn,
-    ),
-    typography: mat.define-typography-config(),
-    density: -2,
-  )
-);
-
-.density-settings-2 {
-  @include mat.all-component-themes($theme-2);
-}
-
-$theme-3: mat.define-light-theme(
-  (
-    color: (
-      primary: $theme-primary,
-      accent: $theme-accent,
-      warn: $theme-warn,
-    ),
-    typography: mat.define-typography-config(),
-    density: -3,
-  )
-);
-
-.density-settings-3 {
-  @include mat.all-component-themes($theme-3);
-}
+// $theme-1: mat.define-light-theme(
+//   (
+//     color: (
+//       primary: $theme-primary,
+//       accent: $theme-accent,
+//       warn: $theme-warn,
+//     ),
+//     typography: mat.define-typography-config(),
+//     density: -1,
+//   )
+// );
